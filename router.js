@@ -9,7 +9,7 @@ passport.use(new VKontakteStrategy(
     {
         clientID:     "7626527",
         clientSecret: "OAjUQOdBARIACLpw3iYz",
-        callbackURL:  `/auth/vkontakte/callback`,
+        callbackURL:  `https://admissiontask.herokuapp.com/auth/vkontakte/callback`,
         scope: ['status', 'email', 'friends', 'photo']
     },
     (req, accessToken, refreshToken, params, profile, done) => {
