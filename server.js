@@ -3,14 +3,10 @@ const app = express();
 const router = require('./router').router;
 const passport = require('passport');
 const session = require('express-session');
-const config = require('./config').config;
 const path = require('path');
 
-/**
- * Setting express app
- */
 app.use(session({
-    secret: 'adwadjtrj22',
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
     cookie: {

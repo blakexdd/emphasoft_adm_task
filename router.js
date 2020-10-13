@@ -2,13 +2,12 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 const request = require('request');
-const config = require('./config').config;
 const VKontakteStrategy = require('passport-vkontakte').Strategy;
 
 passport.use(new VKontakteStrategy(
     {
-        clientID:     "7626527",
-        clientSecret: "OAjUQOdBARIACLpw3iYz",
+        clientID: process.env.CLIENT_IT,
+        clientSecret: process.env.CLIENT_SECRET,
         callbackURL:  `/auth/vkontakte/callback`,
         scope: ['status', 'email', 'friends', 'photo']
     },
