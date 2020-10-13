@@ -25,6 +25,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(router);
 
-app.listen(config.port, () => {
+app.listen(3000, () => {
     console.log('Server started');
 })
