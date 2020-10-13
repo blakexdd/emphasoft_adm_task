@@ -1,7 +1,6 @@
 const config = {
     "host": "localhost",
-    "port": "5000",
-    "server": "https://calm-plateau-26662.herokuapp.com/"
+    "port": 5000,
 }
 
 module.exports.config = config;
