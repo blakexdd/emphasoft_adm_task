@@ -1,0 +1,46 @@
+html {
+    background-color: #10151B;
+    background: url(https://w-dog.ru/wallpapers/13/7/470605069828164/vk-vkontakte-logotip-vk-logo-fon.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    font-smoothing: antialiased;
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)
+}
+
+.btn-grad {
+    margin-bottom: 5px;
+    padding: 15px 45px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(59,173,227,1);
+}
